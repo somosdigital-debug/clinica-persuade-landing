@@ -1,0 +1,766 @@
+{
+  "version": "0.4",
+  "title": "Landing Page Clínica MedCare",
+  "type": "page",
+  "content": [
+    {
+      "id": "header-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "rgba(255,255,255,0.95)",
+        "backdrop_filter_blur": {
+          "unit": "px",
+          "size": 10
+        },
+        "position": "fixed",
+        "z_index": 1000,
+        "width": "100%",
+        "padding": {
+          "unit": "px",
+          "top": "15",
+          "right": "20",
+          "bottom": "15",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "header-column",
+          "elType": "column",
+          "settings": {
+            "width": "100"
+          },
+          "elements": [
+            {
+              "id": "logo-nav-container",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "justify_content": "space-between",
+                "align_items": "center"
+              },
+              "elements": [
+                {
+                  "id": "logo",
+                  "elType": "heading",
+                  "settings": {
+                    "title": "MedCare",
+                    "size": "h2",
+                    "color": "#2563eb",
+                    "typography_font_weight": "700"
+                  }
+                },
+                {
+                  "id": "navigation",
+                  "elType": "nav-menu",
+                  "settings": {
+                    "layout": "horizontal",
+                    "menu_items": [
+                      {"title": "Início", "link": "#inicio"},
+                      {"title": "Serviços", "link": "#servicos"},
+                      {"title": "Sobre", "link": "#sobre"},
+                      {"title": "Depoimentos", "link": "#depoimentos"},
+                      {"title": "Contato", "link": "#contato"}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "gradient",
+        "background_color": "#f8fafc",
+        "background_color_b": "#ffffff",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 135
+        },
+        "min_height": {
+          "unit": "vh",
+          "size": 100
+        },
+        "content_position": "middle",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "flex_wrap": "wrap"
+          },
+          "elements": [
+            {
+              "id": "hero-content",
+              "elType": "column",
+              "settings": {
+                "width": "50",
+                "width_tablet": "100"
+              },
+              "elements": [
+                {
+                  "id": "hero-title",
+                  "elType": "heading",
+                  "settings": {
+                    "title": "Sua <span style=\"color: #2563eb;\">Saúde</span> é Nossa<br><span style=\"background: linear-gradient(135deg, #2563eb, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;\">Prioridade</span>",
+                    "size": "h1",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 56
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2
+                    }
+                  }
+                },
+                {
+                  "id": "hero-description",
+                  "elType": "text-editor",
+                  "settings": {
+                    "editor": "Oferecemos atendimento médico de excelência com uma equipe especializada, tecnologia de ponta e o cuidado que você merece.",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "text_color": "#64748b"
+                  }
+                },
+                {
+                  "id": "hero-buttons",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "cta-button",
+                      "elType": "button",
+                      "settings": {
+                        "text": "📅 Agendar Consulta Agora",
+                        "background_color": "#2563eb",
+                        "color": "#ffffff",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 18
+                        },
+                        "button_border_radius": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "32",
+                          "bottom": "24",
+                          "left": "32"
+                        }
+                      }
+                    },
+                    {
+                      "id": "secondary-button",
+                      "elType": "button",
+                      "settings": {
+                        "text": "Conhecer Serviços",
+                        "button_type": "outline",
+                        "border_color": "#2563eb",
+                        "color": "#2563eb",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 18
+                        },
+                        "button_border_radius": {
+                          "unit": "px",
+                          "size": 12
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "32",
+                          "bottom": "24",
+                          "left": "32"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "hero-features",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row",
+                    "justify_content": "space-between"
+                  },
+                  "elements": [
+                    {
+                      "id": "feature-security",
+                      "elType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-shield-alt",
+                        "icon_color": "#ffffff",
+                        "icon_background_color": "#2563eb",
+                        "title_text": "Segurança",
+                        "description_text": "Protocolos rigorosos"
+                      }
+                    },
+                    {
+                      "id": "feature-care",
+                      "elType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-heart",
+                        "icon_color": "#ffffff",
+                        "icon_background_color": "#2563eb",
+                        "title_text": "Cuidado",
+                        "description_text": "Atendimento humanizado"
+                      }
+                    },
+                    {
+                      "id": "feature-experience",
+                      "elType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-users",
+                        "icon_color": "#ffffff",
+                        "icon_background_color": "#2563eb",
+                        "title_text": "Experiência",
+                        "description_text": "+15 anos no mercado"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hero-image",
+              "elType": "column",
+              "settings": {
+                "width": "50",
+                "width_tablet": "100"
+              },
+              "elements": [
+                {
+                  "id": "hero-image-widget",
+                  "elType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/src/assets/hero-medical.jpg"
+                    },
+                    "image_border_radius": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "image_box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 25,
+                      "blur": 50,
+                      "spread": -12,
+                      "color": "rgba(0, 0, 0, 0.25)"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "services-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "services-container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed"
+          },
+          "elements": [
+            {
+              "id": "services-header",
+              "elType": "heading",
+              "settings": {
+                "title": "Nossos <span style=\"color: #2563eb;\">Serviços</span>",
+                "size": "h2",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 42
+                },
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "services-grid",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "justify_content": "space-between"
+              },
+              "elements": [
+                {
+                  "id": "service-cardiology",
+                  "elType": "icon-box",
+                  "settings": {
+                    "icon": "fas fa-heartbeat",
+                    "icon_color": "#2563eb",
+                    "title_text": "Cardiologia",
+                    "description_text": "Cuidados especializados para o coração com tecnologia de ponta.",
+                    "link": {"url": "#contato"}
+                  }
+                },
+                {
+                  "id": "service-dermatology",
+                  "elType": "icon-box",
+                  "settings": {
+                    "icon": "fas fa-user-md",
+                    "icon_color": "#2563eb",
+                    "title_text": "Dermatologia",
+                    "description_text": "Tratamentos completos para saúde e beleza da sua pele.",
+                    "link": {"url": "#contato"}
+                  }
+                },
+                {
+                  "id": "service-pediatrics",
+                  "elType": "icon-box",
+                  "settings": {
+                    "icon": "fas fa-baby",
+                    "icon_color": "#2563eb",
+                    "title_text": "Pediatria",
+                    "description_text": "Cuidado especializado para crianças em todas as fases.",
+                    "link": {"url": "#contato"}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#f8fafc",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "about-container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "flex_wrap": "wrap"
+          },
+          "elements": [
+            {
+              "id": "about-content",
+              "elType": "column",
+              "settings": {
+                "width": "50"
+              },
+              "elements": [
+                {
+                  "id": "about-title",
+                  "elType": "heading",
+                  "settings": {
+                    "title": "Sobre a <span style=\"color: #2563eb;\">Clínica MedCare</span>",
+                    "size": "h2",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 36
+                    }
+                  }
+                },
+                {
+                  "id": "about-description",
+                  "elType": "text-editor",
+                  "settings": {
+                    "editor": "Há mais de 15 anos dedicamos nossa expertise ao cuidado da saúde de nossa comunidade. Nossa missão é oferecer atendimento médico de excelência, combinando tecnologia avançada com o cuidado humano que cada paciente merece."
+                  }
+                },
+                {
+                  "id": "stats-grid",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap"
+                  },
+                  "elements": [
+                    {
+                      "id": "stat-experience",
+                      "elType": "counter",
+                      "settings": {
+                        "ending_number": 15,
+                        "suffix": "+",
+                        "title": "Anos de Experiência"
+                      }
+                    },
+                    {
+                      "id": "stat-patients",
+                      "elType": "counter",
+                      "settings": {
+                        "ending_number": 5000,
+                        "suffix": "+",
+                        "title": "Pacientes Atendidos"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "about-image",
+              "elType": "column",
+              "settings": {
+                "width": "50"
+              },
+              "elements": [
+                {
+                  "id": "doctor-image",
+                  "elType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/src/assets/doctor-profile.jpg"
+                    },
+                    "image_border_radius": {
+                      "unit": "px",
+                      "size": 16
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testimonials-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "testimonials-container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed"
+          },
+          "elements": [
+            {
+              "id": "testimonials-title",
+              "elType": "heading",
+              "settings": {
+                "title": "O que Nossos <span style=\"color: #2563eb;\">Pacientes</span> Dizem",
+                "size": "h2",
+                "align": "center",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                }
+              }
+            },
+            {
+              "id": "testimonials-carousel",
+              "elType": "testimonial-carousel",
+              "settings": {
+                "testimonials": [
+                  {
+                    "content": "Excelente atendimento! A equipe é muito profissional e o cuidado é excepcional.",
+                    "name": "Maria Silva",
+                    "job": "Paciente há 3 anos",
+                    "rating": 5
+                  },
+                  {
+                    "content": "Clínica moderna com equipamentos de última geração. Recomendo!",
+                    "name": "João Santos",
+                    "job": "Paciente há 2 anos",
+                    "rating": 5
+                  },
+                  {
+                    "content": "Atendimento humanizado e profissional. Me sinto muito bem cuidada.",
+                    "name": "Ana Costa",
+                    "job": "Paciente há 5 anos",
+                    "rating": 5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "gradient",
+        "background_color": "#f8fafc",
+        "background_color_b": "#e2e8f0",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "20",
+          "bottom": "80",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "contact-container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "flex_wrap": "wrap"
+          },
+          "elements": [
+            {
+              "id": "contact-info",
+              "elType": "column",
+              "settings": {
+                "width": "50"
+              },
+              "elements": [
+                {
+                  "id": "contact-title",
+                  "elType": "heading",
+                  "settings": {
+                    "title": "Entre em <span style=\"color: #2563eb;\">Contato</span>",
+                    "size": "h2",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 36
+                    }
+                  }
+                },
+                {
+                  "id": "contact-details",
+                  "elType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "(11) 98765-4321",
+                        "icon": "fas fa-phone",
+                        "link": "tel:+5511987654321"
+                      },
+                      {
+                        "text": "contato@clinicamedcare.com.br",
+                        "icon": "fas fa-envelope",
+                        "link": "mailto:contato@clinicamedcare.com.br"
+                      },
+                      {
+                        "text": "Rua da Saúde, 123 - São Paulo, SP",
+                        "icon": "fas fa-map-marker-alt"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "contact-form",
+              "elType": "column",
+              "settings": {
+                "width": "50"
+              },
+              "elements": [
+                {
+                  "id": "appointment-form",
+                  "elType": "form",
+                  "settings": {
+                    "form_name": "Agendamento",
+                    "form_fields": [
+                      {
+                        "custom_id": "name",
+                        "field_type": "text",
+                        "field_label": "Nome Completo",
+                        "required": true
+                      },
+                      {
+                        "custom_id": "email",
+                        "field_type": "email",
+                        "field_label": "E-mail",
+                        "required": true
+                      },
+                      {
+                        "custom_id": "phone",
+                        "field_type": "tel",
+                        "field_label": "Telefone",
+                        "required": true
+                      },
+                      {
+                        "custom_id": "service",
+                        "field_type": "select",
+                        "field_label": "Especialidade",
+                        "field_options": "Cardiologia\nDermatologia\nPediatria\nClínica Geral\nOutros"
+                      },
+                      {
+                        "custom_id": "message",
+                        "field_type": "textarea",
+                        "field_label": "Mensagem",
+                        "rows": 4
+                      }
+                    ],
+                    "button_text": "Agendar Consulta",
+                    "button_background_color": "#2563eb"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer-section",
+      "elType": "section",
+      "settings": {
+        "background_color": "#1e293b",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "20",
+          "bottom": "60",
+          "left": "20"
+        }
+      },
+      "elements": [
+        {
+          "id": "footer-container",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "flex_direction": "row",
+            "justify_content": "space-between"
+          },
+          "elements": [
+            {
+              "id": "footer-brand",
+              "elType": "column",
+              "settings": {
+                "width": "33"
+              },
+              "elements": [
+                {
+                  "id": "footer-logo",
+                  "elType": "heading",
+                  "settings": {
+                    "title": "MedCare",
+                    "size": "h3",
+                    "color": "#ffffff"
+                  }
+                },
+                {
+                  "id": "footer-description",
+                  "elType": "text-editor",
+                  "settings": {
+                    "editor": "Cuidando da sua saúde com excelência e dedicação há mais de 15 anos.",
+                    "text_color": "#94a3b8"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-links",
+              "elType": "column",
+              "settings": {
+                "width": "33"
+              },
+              "elements": [
+                {
+                  "id": "footer-menu",
+                  "elType": "nav-menu",
+                  "settings": {
+                    "layout": "vertical",
+                    "menu_items": [
+                      {"title": "Início", "link": "#inicio"},
+                      {"title": "Serviços", "link": "#servicos"},
+                      {"title": "Sobre", "link": "#sobre"},
+                      {"title": "Contato", "link": "#contato"}
+                    ],
+                    "color": "#94a3b8"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "footer-social",
+              "elType": "column",
+              "settings": {
+                "width": "33"
+              },
+              "elements": [
+                {
+                  "id": "social-icons",
+                  "elType": "social-icons",
+                  "settings": {
+                    "social_icon_list": [
+                      {
+                        "social": "facebook",
+                        "link": {"url": "https://facebook.com"}
+                      },
+                      {
+                        "social": "instagram", 
+                        "link": {"url": "https://instagram.com"}
+                      },
+                      {
+                        "social": "linkedin",
+                        "link": {"url": "https://linkedin.com"}
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
